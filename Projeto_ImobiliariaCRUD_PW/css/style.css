@@ -1,0 +1,47 @@
+/* Estilos complementares do sistema (não definidos inline no header.php) */
+
+/* Área de upload de imagem (label que "disfarça" o input file) */
+.re-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border: 2px dashed var(--re-line, #e6e1d7);
+    border-radius: 10px;
+    background: var(--re-paper, #faf8f4);
+    color: #6b7772;
+    cursor: pointer;
+    transition: border-color .15s, background-color .15s, color .15s;
+}
+
+.re-drop:hover,
+.re-drop:focus-visible {
+    border-color: var(--re-brass, #b98a3e);
+    background: #fff;
+    color: var(--re-green, #0f3d2e);
+}
+
+.re-drop i {
+    font-size: 2rem;
+    color: var(--re-brass, #b98a3e);
+}
+
+.re-drop strong {
+    font-size: .92rem;
+    font-weight: 600;
+}
+
+/* Miniatura da imagem já cadastrada (em edit.php) ou do imóvel (em view.php/index.php) */
+.re-thumb {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--re-line, #e6e1d7);
+    display: block;
+    margin-top: .75rem;
+}
